@@ -1,0 +1,91 @@
+.promotions-page {
+  min-height: 100vh;
+  padding-top: 80px;
+}
+
+.promotion-card {
+  border: none;
+  border-radius: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.promotion-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1) !important;
+}
+
+.promotion-badge {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  z-index: 1;
+}
+
+.discount-badge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 80px;
+  background: linear-gradient(135deg, #ff6b6b 0%, #ee5a52 100%);
+  color: white;
+  border-radius: 50%;
+  margin: 0 auto 20px;
+  position: relative;
+}
+
+.discount-value {
+  font-size: 24px;
+  font-weight: bold;
+  margin-left: 5px;
+}
+
+.promotion-details {
+  background-color: #f8f9fa;
+  padding: 15px;
+  border-radius: 10px;
+  border-left: 4px solid #0d6efd;
+}
+
+.detail-item {
+  display: flex;
+  align-items: flex-start;
+}
+
+.bonus-program-card {
+  background: linear-gradient(135deg, #fff8e1 0%, #ffecb3 100%);
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  padding: 30px;
+}
+
+.promotions-intro {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+@media (max-width: 768px) {
+  .promotions-page {
+    padding-top: 20px;
+  }
+  
+  .promotion-card {
+    margin-bottom: 20px;
+  }
+  
+  .discount-badge {
+    width: 60px;
+    height: 60px;
+  }
+  
+  .discount-value {
+    font-size: 18px;
+  }
+}

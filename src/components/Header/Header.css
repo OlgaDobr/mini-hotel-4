@@ -1,0 +1,106 @@
+hotel-header {
+    background: linear-gradient(135deg, #1a365d 0%, #2d3748 100%);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 20px;
+    background-color: aqua;
+}
+
+.hotel-logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.hotel-logo:hover {
+    color: #e2b714;
+}
+
+.hotel-logo span {
+    color: #e2b714;
+}
+
+.nav-link-custom {
+    color: #48b8d7 !important;
+    font-weight: 500;
+    font-size: 1.1rem;
+    padding: 0.5rem 1.5rem !important;
+    margin: 0 0.2rem;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.nav-link-custom:hover {
+    color: #e2b714 !important;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.nav-link-custom.active {
+    color: #e2b714 !important;
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.nav-link-custom.active::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60%;
+    height: 3px;
+    background: #e2b714;
+    border-radius: 2px;
+}
+
+.auth-buttons .btn-outline-light {
+    border-color: #e2b714;
+    color: #e2b714;
+    transition: all 0.3s ease;
+}
+
+.auth-buttons .btn-outline-light:hover {
+    background: #e2b714;
+    color: #1a365d;
+    transform: translateY(-2px);
+}
+
+.mobile-menu-btn {
+    border: 2px solid #e2b714;
+    color: #e2b714;
+}
+
+.mobile-menu-btn:hover {
+    background: #e2b714;
+    color: #1a365d;
+}
+
+@media (max-width: 991.98px) {
+    .hotel-logo {
+        font-size: 2rem;
+    }
+    
+    .nav-link-custom {
+        padding: 0.8rem 1rem !important;
+        margin: 0.2rem 0;
+    }
+    
+    .navbar-collapse {
+        background: rgba(26, 54, 93, 0.95);
+        border-radius: 8px;
+        padding: 1rem;
+        margin-top: 1rem;
+        backdrop-filter: blur(10px);
+    }
+}

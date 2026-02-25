@@ -1,0 +1,207 @@
+/* App.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    background-color: #28a745; 
+    background: url('../assets/images/body/img1.jpeg') no-repeat center center/cover; 
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    background-color: #28a745; 
+
+}
+
+/* Header.css */
+.header-navbar {
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.hotel-logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.logo-text {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    color: #2c3e50;
+    margin-left: 10px;
+}
+
+.nav-link {
+    font-weight: 500;
+    margin: 0 5px;
+}
+
+.nav-link:hover {
+    color: #007bff !important;
+}
+
+/* Footer.css */
+.footer {
+    background: linear-gradient(135deg, #2c3e50 0%, #613dcc 100%);
+}
+
+.footer h5 {
+    color: #f8f9fa;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.footer a {
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer a:hover {
+    color: #007bff !important;
+}
+
+.social-links a {
+    color: #fff;
+    transition: transform 0.3s;
+}
+
+.social-links a:hover {
+    color: #007bff;
+    transform: translateY(-3px);
+}
+
+.payment-methods img {
+    filter: grayscale(100%);
+    transition: filter 0.3s;
+}
+
+.payment-methods img:hover {
+    filter: grayscale(0%);
+}
+
+/* BookingForm.css */
+.booking-form-container {
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.react-datepicker-wrapper {
+    width: 100%;
+}
+
+.room-card {
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+    border: 2px solid transparent;
+}
+
+.room-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.room-card.selected {
+    border-color: #007bff;
+}
+
+/* HomePage.css */
+.hero-section .carousel-item {
+    height: 600px;
+}
+
+.hero-section .carousel-item img {
+    object-fit: cover;
+    height: 100%;
+}
+
+.hero-section .carousel-caption {
+    background: rgba(0,0,0,0.6);
+    padding: 30px;
+    border-radius: 10px;
+    bottom: 50%;
+    transform: translateY(50%);
+}
+
+.about-section {
+    background: #f8f9fa;
+}
+
+.rooms-section .card {
+    transition: transform 0.3s;
+}
+
+.rooms-section .card:hover {
+    transform: translateY(-5px);
+}
+
+.price {
+    font-size: 1.5rem;
+    color: #28a745;
+    font-weight: bold;
+}
+
+/* RoomsPage.css */
+.room-card {
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.room-image {
+    height: 100%;
+    object-fit: cover;
+    min-height: 300px;
+}
+
+.room-unavailable {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.amenities-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-section .carousel-item {
+        height: 400px;
+    }
+    
+    .hero-section .carousel-caption h1 {
+        font-size: 1.5rem;
+    }
+    
+    .hero-section .carousel-caption p {
+        font-size: 1rem;
+    }
+    
+    .room-card .row {
+        flex-direction: column;
+    }
+    
+    .room-image {
+        min-height: 200px;
+    }
+}
+
+@media (max-width: 576px) {
+    .hotel-logo .logo-text {
+        font-size: 1.2rem;
+    }
+    
+    .booking-form-container {
+        padding: 15px;
+    }
+}

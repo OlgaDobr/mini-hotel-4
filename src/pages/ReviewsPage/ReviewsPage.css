@@ -1,0 +1,135 @@
+.reviews-page {
+  min-height: 100vh;
+  padding-top: 80px;
+}
+
+.statistics-card {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.stat-item {
+  padding: 20px;
+}
+
+.stat-item h2 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.stat-item p {
+  margin-bottom: 0;
+  opacity: 0.9;
+}
+
+.review-card {
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+}
+
+.review-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.reviewer-avatar {
+  width: 80px;
+  height: 80px;
+  background: linear-gradient(135deg, #e9ecef 0%, #dee2e6 100%);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #6c757d;
+  margin: 0 auto;
+}
+
+.review-date {
+  font-size: 0.9rem;
+  color: #6c757d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.review-stay {
+  margin-top: 5px;
+}
+
+.review-rating {
+  display: flex;
+  align-items: center;
+}
+
+.star-filled {
+  color: #ffc107;
+  fill: #ffc107;
+}
+
+.star-empty {
+  color: #e4e5e9;
+}
+
+.review-text {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.filter-section,
+.sort-section {
+  display: flex;
+  align-items: center;
+  background-color: #f8f9fa;
+  padding: 10px 15px;
+  border-radius: 10px;
+}
+
+.rating-stars {
+  display: flex;
+  align-items: center;
+}
+
+.rating-star {
+  color: #e4e5e9;
+  cursor: pointer;
+  transition: color 0.2s ease;
+  margin-right: 5px;
+}
+
+.rating-star.selected {
+  color: #ffc107;
+  fill: #ffc107;
+}
+
+.rating-star:hover {
+  color: #ffc107;
+}
+
+@media (max-width: 768px) {
+  .reviews-page {
+    padding-top: 20px;
+  }
+  
+  .stat-item {
+    padding: 15px;
+  }
+  
+  .stat-item h2 {
+    font-size: 2rem;
+  }
+  
+  .reviewer-info {
+    text-align: center;
+  }
+  
+  .filter-section,
+  .sort-section {
+    margin-bottom: 10px;
+  }
+}
